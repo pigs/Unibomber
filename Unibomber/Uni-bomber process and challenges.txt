@@ -1,0 +1,10 @@
+LCC 2700 Final Project 
+Description of process and challenges
+Uni-bomber
+by Andrew Van Deventer, Jessica Dougherty, Hannah Yu, and Makario Lewis
+
+The general concept of our game was inspired by the 1982 arcade game Joust.  We wanted to adapt the game to be a "keep away" competition, like hot potato. 
+
+We first got drew our sprites and playfield on the screen and set up their controls.  We used the built-in ball object for the "bomb".  Then we added basic collision detection between the unicorns and the bomb so that the bomb would follow whichever unicorn collided with the bomb.  We added collision detection between the unicorns and the playfield, so that the "map" would be more interesting/engaging and there could be more obstacles as the players moved around the screen.  The timer is actually the score, counting down from 1000 to 0.  When we added the timer, we realized we should have the bomb starting off already attached to one of the unicorns to avoid a stalemate.  We added the detail of randomly selecting a unicorn to start off with the bomb before each game.  We initially imagined the game to have a concept of gravity, as Joust did, so we added that at the end.  We then added win screens for each player and then a reset key (space bar).  
+
+The implementation of gravity was most challenging.  It was difficult to get the unicorns to return to the "ground" without getting stuck in the playfield's collision detection.  
